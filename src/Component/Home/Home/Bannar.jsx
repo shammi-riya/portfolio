@@ -2,11 +2,12 @@
 import bannar2 from '../../../assets/bannar2.png'
 import Typed from 'typed.js';
 import { BsFillCloudArrowDownFill } from 'react-icons/bs';
-import resumeFile from '../../../assets/my_resume-13 (1).pdf';
+import resumeFile from '../../../assets/my_resume-16.pdf'
 import { IoLogoGithub, IoLogoFacebook, IoLogoLinkedin } from "react-icons/io";
 import { useEffect, useRef } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import { Link } from 'react-router-dom';
 
 const Bannar = () => {
 
@@ -74,17 +75,19 @@ const Bannar = () => {
           <h1>My Skill:<span className='font-bold' style={{ whiteSpace: 'pre' }} ref={el}></span></h1>
           <div className='flex gap-4 ' >
 
-            <button className="bg-[#858792] flex justify-center items-center duration-500 border-2 border-[#858792]   w-12 transform hover:-translate-y-3   h-12 text-2xl rounded-full hover:border-white hover:bg-transparent hover:text-white text-white ">
+          <Link to='https://www.linkedin.com/in/shammi-riya-b40525242/'>
+          <button className="bg-[#858792] flex justify-center items-center duration-500 border-2 border-[#858792]   w-12 transform hover:-translate-y-3   h-12 text-2xl rounded-full hover:border-white hover:bg-transparent hover:text-white text-white ">
               <IoLogoLinkedin></IoLogoLinkedin>
             </button>
+          </Link>
 
 
-            <button className="bg-[#858792] flex justify-center items-center transform hover:-translate-y-3  border-2 w-12 h-12 rounded-full duration-500 text-white border-[#858792] hover:border-white hover:bg-transparent hover:text-white text-2xl">
+            <Link to='https://github.com/shammi-riya'><button className="bg-[#858792] flex justify-center items-center transform hover:-translate-y-3  border-2 w-12 h-12 rounded-full duration-500 text-white border-[#858792] hover:border-white hover:bg-transparent hover:text-white text-2xl">
               <IoLogoGithub></IoLogoGithub>
-            </button>
-            <button className="bg-[#858792] flex justify-center items-center transform hover:-translate-y-3  border-2 w-12 h-12 rounded-full duration-500 text-white border-[#858792] hover:border-white  hover:bg-transparent hover:text-white text-2xl">
+            </button></Link>
+           <Link> <button className="bg-[#858792] flex justify-center items-center transform hover:-translate-y-3  border-2 w-12 h-12 rounded-full duration-500 text-white border-[#858792] hover:border-white  hover:bg-transparent hover:text-white text-2xl">
               <IoLogoFacebook></IoLogoFacebook>
-            </button>
+            </button></Link>
 
           </div>
 
