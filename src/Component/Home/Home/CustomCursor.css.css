@@ -1,0 +1,9 @@
+.custom-cursor {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    background-color: #fff;
+    /* Add additional styling as desired */
+  }
+  
