@@ -111,10 +111,12 @@ const Web = () => {
 
 
   return (
-    <div   data-aos="zoom-in"
+    < 
     >
    
-      <div className=" lg:mx-32 md:mx-8 mx-5 sm:mx-4">
+      <div id="projects"
+       data-aos="zoom-in"
+      className=" lg:mx-32 md:mx-8 mx-5 sm:mx-4">
         <div data-aos="fade-left"
         className="text-center py-14 font-bold ">
           <h1 className="text-4xl text-white">My latest Pojects</h1>
@@ -208,7 +210,7 @@ const Web = () => {
           }
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

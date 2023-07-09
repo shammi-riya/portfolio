@@ -21,8 +21,9 @@ const Skill = () => {
         }, []);
       
     return (
-        <div>
-            <div  data-aos="zoom-in"
+        <>
+            <div  id="skill"
+            data-aos="zoom-in"
             className="text-center py-10 font-bold ">
                 <h1 className="text-4xl text-white">My Skill</h1>
             </div>
@@ -112,7 +113,7 @@ const Skill = () => {
 
 
             </div>
-        </div>
+        </>
     );
 };
 

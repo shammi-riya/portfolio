@@ -32,8 +32,10 @@ const Contuct = () => {
             console.log(error.text);
         });
     };
+
+    
     return (
-      <div id='#contuct'>
+      <div id='contuct'>
          <div data-aos="zoom-in"
          className="text-center py-14 font-bold ">
             <h1 className="text-4xl text-white">Contuct Us</h1>

@@ -11,7 +11,7 @@ const About = () => {
       }, []);
 
     return (
-        < div id='#About'
+        <div id='About'
         className="text-white my-28 px-32">
 
             <h1 className="text-center font-bold my-16 text-4xl ">About Me</h1>

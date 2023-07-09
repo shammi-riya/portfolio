@@ -9,7 +9,7 @@ import { ThemeContext } from '../../../Provider/ThemeProvider';
 import Navber from '../../Shared/Navber';
 import About from './About/About';
 
-// import "./CustomCursor.css";
+// import "./CustomCursor.css";npm
 
 const Home = () => {
 
