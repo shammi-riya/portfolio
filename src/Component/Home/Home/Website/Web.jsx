@@ -55,7 +55,7 @@ const Web = () => {
     {
       id: 2,
       pojectName: 'Easy Buy',
-      techknology: ['tailwind', 'react js', 'strie js', 'mongodb', 'express js', 'firebase', 'react-hook-from', 'TanStack Query '],
+      techknology: ['tailwind', 'react js', 'strie js', 'mongodb', 'express js', 'firebase',  'TanStack Query '],
       features: [
         'Users can add Product to the cart, remove from the cart see added product, increase and decrease product in the cart, send messages',
         'Authenticated with firebase'
