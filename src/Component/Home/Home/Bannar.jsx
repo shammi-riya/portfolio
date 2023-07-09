@@ -2,7 +2,7 @@
 import bannar2 from '../../../assets/bannar2.png'
 import Typed from 'typed.js';
 import { BsFillCloudArrowDownFill } from 'react-icons/bs';
-import resumeFile from '../../../assets/my_resume-16.pdf'
+import resumeFile from '../../../assets/shammi (1).pdf'
 import { IoLogoGithub, IoLogoFacebook, IoLogoLinkedin } from "react-icons/io";
 import { useEffect, useRef } from 'react';
 import Aos from 'aos';
