@@ -6,6 +6,10 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { ThemeContext } from '../../Provider/ThemeProvider';
 
+import { ToastContainer, toast } from 'react-toastify';
+
+  import 'react-toastify/dist/ReactToastify.css';
+
 
 const Contuct = () => {
     const {isDarkMode} = useContext(ThemeContext);
@@ -14,6 +18,8 @@ const Contuct = () => {
         Aos.init();
         Aos.refresh();
       }, []);
+
+      const notify = () => toast("Mssage Send sucessfully !");
 
 
 
@@ -27,6 +33,7 @@ const Contuct = () => {
        form.current, 'YFL0_5lycFlgu4zY2')
         .then((result) => {
             console.log(result.text);
+           
             e.target.reset();
         }, (error) => {
             console.log(error.text);
@@ -74,15 +81,16 @@ const Contuct = () => {
                             <textarea
                                 name="message"
                                 className="textarea textarea-bordered w-full"
-                                placeholder="Bio"></textarea>
+                                placeholder="Message"></textarea>
                         </div>
 
                         
 
 
-                        <input 
+                        <input onClick={notify}
                         className={`py-2 w-full ${!isDarkMode? "bg-[#252734] " : "bg-[#333b72]"}   text-white text-xl`}
                         type="submit" value="Send Message" />
+                        <ToastContainer />
                     </form>
 
 
