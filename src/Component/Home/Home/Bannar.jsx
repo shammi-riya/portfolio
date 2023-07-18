@@ -66,13 +66,13 @@ const Bannar = () => {
       <div className="grid lg:grid-cols-2 grid-cols-1 w-full py-6 items-center  lg:mx-36">
         <div data-aos="fade-right"
           className=' w-full mx-auto uppercase text-2xl space-y-3  px-28 sm:px-4  text-white'>
-          <div className='text-7xl'>
+          <div className='lg:text-7xl text-4xl'>
             <h3>Hello</h3>
 
             <h4>I am Riya Moni</h4>
           </div>
           <h4>Welcome to my world</h4>
-          <h1>My Skill:<span className='font-bold' style={{ whiteSpace: 'pre' }} ref={el}></span></h1>
+          <h1>Skill:<span className='font-bold' style={{ whiteSpace: 'pre' }} ref={el}></span></h1>
           <div className='flex gap-4 ' >
 
           <Link to='https://www.linkedin.com/in/shammi-riya-b40525242/'>
