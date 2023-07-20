@@ -1,7 +1,7 @@
 
 import Typed from 'typed.js';
 import { BsFillCloudArrowDownFill } from 'react-icons/bs';
-import resumeFile from '../../../assets/shammi (1).pdf'
+import resumeFile from '../../../assets/shammi akter Riya (1).pdf'
 import { IoLogoGithub, IoLogoFacebook, IoLogoLinkedin } from "react-icons/io";
 import { useEffect, useRef } from 'react';
 import Aos from 'aos';
