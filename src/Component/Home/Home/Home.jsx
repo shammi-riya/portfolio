@@ -15,7 +15,7 @@ const Home = () => {
 
     const {isDarkMode} = useContext(ThemeContext)
     return (
-        <div className= {isDarkMode? " bg-[#333b72] custom-cursor " :" bg-[#252734]" }>
+        <div className= {!isDarkMode? " bg-[#333b72] custom-cursor " :" bg-[#252734]" }>
           
             <Navber></Navber>
             <Bannar></Bannar>

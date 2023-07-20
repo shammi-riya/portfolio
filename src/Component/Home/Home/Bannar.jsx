@@ -1,5 +1,4 @@
 
-import bannar2 from '../../../assets/bannar2.png'
 import Typed from 'typed.js';
 import { BsFillCloudArrowDownFill } from 'react-icons/bs';
 import resumeFile from '../../../assets/shammi (1).pdf'
@@ -8,6 +7,7 @@ import { useEffect, useRef } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom';
+import img1 from '../../../assets/r2-removebg-preview.png'
 
 const Bannar = () => {
 
@@ -37,7 +37,9 @@ const Bannar = () => {
         ' Bootstrap',
         ' Tailwind',
         ' javascript',
-        'React Js'
+        'React Js',
+        'express js',
+
 
 
       ],
@@ -47,12 +49,11 @@ const Bannar = () => {
       loop: true,
     };
 
-    // elRef refers to the <span> rendered below
+    
     typed.current = new Typed(el.current, options);
 
     return () => {
-      // Make sure to destroy Typed instance during cleanup
-      // to prevent memory leaks
+      
       typed.current.destroy();
     }
   }, [])
@@ -75,17 +76,17 @@ const Bannar = () => {
           <h1>Skill:<span className='font-bold' style={{ whiteSpace: 'pre' }} ref={el}></span></h1>
           <div className='flex gap-4 ' >
 
-          <Link to='https://www.linkedin.com/in/shammi-riya-b40525242/'>
-          <button className="bg-[#858792] flex justify-center items-center duration-500 border-2 border-[#858792]   w-12 transform hover:-translate-y-3   h-12 text-2xl rounded-full hover:border-white hover:bg-transparent hover:text-white text-white ">
-              <IoLogoLinkedin></IoLogoLinkedin>
-            </button>
-          </Link>
+            <Link to='https://www.linkedin.com/in/shammi-riya-b40525242/'>
+              <button className="bg-[#5162d1] flex justify-center items-center duration-500 border-2 border-indigo-600   w-12 transform hover:-translate-y-3   h-12 text-2xl rounded-full hover:border-white hover:bg-transparent hover:text-white text-white ">
+                <IoLogoLinkedin></IoLogoLinkedin>
+              </button>
+            </Link>
 
 
-            <Link to='https://github.com/shammi-riya'><button className="bg-[#858792] flex justify-center items-center transform hover:-translate-y-3  border-2 w-12 h-12 rounded-full duration-500 text-white border-[#858792] hover:border-white hover:bg-transparent hover:text-white text-2xl">
+            <Link to='https://github.com/shammi-riya'><button className="bg-[#5162d1] flex justify-center items-center transform hover:-translate-y-3  border-2 w-12 h-12 rounded-full duration-500 text-white border-indigo-600 hover:border-white hover:bg-transparent hover:text-white text-2xl">
               <IoLogoGithub></IoLogoGithub>
             </button></Link>
-           <Link> <button className="bg-[#858792] flex justify-center items-center transform hover:-translate-y-3  border-2 w-12 h-12 rounded-full duration-500 text-white border-[#858792] hover:border-white  hover:bg-transparent hover:text-white text-2xl">
+            <Link> <button className="bg-[#5162d1] flex justify-center items-center transform hover:-translate-y-3  border-2 w-12 h-12 rounded-full duration-500 text-white border-indigo-600 hover:border-white  hover:bg-transparent hover:text-white text-2xl">
               <IoLogoFacebook></IoLogoFacebook>
             </button></Link>
 
@@ -95,17 +96,19 @@ const Bannar = () => {
 
 
 
-          <button onClick={handleDownload}
-            className="bg-gradient-to-r flex items-center justify-center gap-2 from-[#858792] to-[#4f5054] hover:bg-transparent hover:to-[#252734] text-white font-semibold py-2 px-4 rounded-md shadow-md transition-all duration-300 text-md transform hover:scale-105 hover:shadow-lg">Dowenload
-            Resumi
 
-            <span><BsFillCloudArrowDownFill></BsFillCloudArrowDownFill></span>
-          </button>
+
+          <a onClick={handleDownload}
+            href="#_" className="relative text-md inline-flex items-center justify-center p-4 px-4 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 hover:ring-purple-500">
+            <span className="absolute inset-0 w-full h-full bg-gradient-to-br from-[#333b72] via-[#5162d1] to-indigo-600"></span>
+            <span className="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-[#333b72] rounded-full opacity-30 group-hover:rotate-90 ease"></span>
+            <span className="relative text-white flex items-center gap-2"><span className='flex gap-2'><span className='lg:block hidden'>DowenLoad</span> Resumi</span><span><BsFillCloudArrowDownFill></BsFillCloudArrowDownFill></span></span>
+          </a>
 
         </div>
         <div data-aos="fade-left"
           className='lg:px-10 md:px-6 pt-20'>
-          <img className='h-[80vh] w-full' src={bannar2} alt="" />
+          <img className='h-[550px] w-[480px] border-2 lg:ml-12 rounded border-indigo-500' src={img1} alt="" />
         </div>
       </div>
     </div>

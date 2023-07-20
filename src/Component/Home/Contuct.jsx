@@ -45,7 +45,8 @@ const Contuct = () => {
       <div id='contuct'>
          <div data-aos="zoom-in"
          className="text-center py-14 font-bold ">
-            <h1 className="text-4xl text-white">Contuct Us</h1>
+          <h1 className="mx-auto font-bold my-16 text-4xl border-y-4 text-white  border-indigo-600  w-64">Contuct Us</h1>
+
         </div>
           <div  
           id='contuct'
@@ -53,9 +54,9 @@ const Contuct = () => {
         style={{ backgroundImage: `url("${contuct}")` }}>
             
             <div className="hero-overlay  bg-opacity-60"></div>
-            <div className=" grid  lg:grid-cols-2 grid-cols-1  gap-8  w-full px-28">
+            <div className=" grid  lg:grid-cols-2 grid-cols-1  gap-8 px-5  w-full lg:px-28">
                 <div 
-                className="">
+                className="w-full">
 
 
 
@@ -88,7 +89,7 @@ const Contuct = () => {
 
 
                         <input onClick={notify}
-                        className={`py-2 w-full ${!isDarkMode? "bg-[#252734] " : "bg-[#333b72]"}   text-white text-xl`}
+                        className={`py-2 w-full ${isDarkMode? "bg-[#252734] " : "bg-[#333b72]"}   text-white text-xl`}
                         type="submit" value="Send Message" />
                         <ToastContainer />
                     </form>

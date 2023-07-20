@@ -1,49 +1,41 @@
-import img1 from '../../../../assets/1672775342145.jpg'
+import img1 from '../../../../assets/r2-removebg-preview.png'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import { BsFlag } from 'react-icons/bs';
+import { AiFillPhone } from 'react-icons/ai';
+import { SiGmail } from 'react-icons/si';
+
 
 const About = () => {
-    
+
     useEffect(() => {
         Aos.init();
         Aos.refresh();
-      }, []);
+    }, []);
 
     return (
         <div id='About'
-        className="text-white my-28 px-32">
+            className="text-white my-28 sm:px-10 sm:w-full mx-auto lg:px-32">
 
-            <h1 className="text-center font-bold my-16 text-4xl ">About Me</h1>
-        
+            <h1 className="mx-auto font-bold my-16 text-4xl border-y-4  border-indigo-600  w-44">About Me</h1>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-                <div data-aos="fade-right"
-                >
-                    <img className='h-[450px] w-[450px]' src={img1} alt="" />
+            <div className='lg:flex lg:flex-nowrap sm:flex-wrap justify-center items-center lg:gap-12'>
+                <div className='lg:w-1/2 lg:block hidden sm:w-full mx-auto'>
+                    <img className='lg:h-96 sm:h-auto  border-2 rounded border-indigo-600 ' src={img1} alt="" />
                 </div>
+                <div className='space-y-2 lg:text-start text-center sm:mt-5'>
+                    <h2 className='lg:text-5xl md:text-2xl font-bold'>I am Frontend Developer</h2>
+                    <h1 className='text-xl font-bold'>I am Shammi Akter form Bangladesh. I am Learning Programming every single day.I'm a Diploma student of CST (Computer Science & Technology). I have some projects with MERN Stack. I am a hard working person. I always learn new technologies everyday.</h1>
+                   <div className='lg:block hidden '>
+                   <p className='flex gap-2 items-center text-xl'><BsFlag></BsFlag>  <span>Bangladesh</span></p>
+                    <p className='flex gap-2 items-center text-xl'><span><AiFillPhone></AiFillPhone></span> <span>+8801840284709</span></p>
+                    <p className='flex gap-2 items-center text-xl'><span><SiGmail></SiGmail></span> <span>shammiriya455@gmail.com</span></p>
+                   </div>
 
-                <div
-                data-aos="fade-left"
-                >
-
-                    <p className="text-lg text-justify">Hello guys!! I am Shammi Akter Riya  from Bangladesh. I'm a Diploma student of CST (Computer Science & Technology). I'm a passionate web developer with a keen eye for detail, and a drive to create elegant, efficient, and user-friendly web app. With over 1+ years of experience in web development, a passionate front-end web developer with over a year of experience in HTML, CSS, Bootstrap, Tailwind, JavaScript, React.js, ES6, Firebase, MondoDB, Node.js, Express.js and JWT . I also enjoy doing research to stay up-to-date with the latest trends and technologies in web development. I specialize in creating modern, responsive, and user-friendly websites that provide a seamless experience to users.
-
-                        <div className='flex gap-9 my-4'>
-                            <div>
-                                <p className='text-4xl font-bold'>01</p>
-                                years of experence
-                            </div>
-                            <div>
-                                <p className='text-4xl font-bold'>15+ </p>
-                                Projects
-                            </div>
-                        </div>
-
-                    </p>
                 </div>
-
             </div>
+
         </div>
     );
 };

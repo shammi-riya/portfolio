@@ -1,0 +1,13 @@
+/* CSS */
+.card-image-container {
+    position: relative;
+  }
+  
+  .card-image-scroll {
+    transition: transform 1s ease-in-out;
+  }
+  
+  .card-image-container:hover .card-image-scroll {
+    transform: translateY(-60%);
+  }
+  

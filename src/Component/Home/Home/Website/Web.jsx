@@ -3,6 +3,7 @@ import { FaChevronDown, FaChevronUp, FaGithubSquare } from "react-icons/fa";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import './We.css'
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -116,20 +117,24 @@ const Web = () => {
    
       <div id="projects"
        data-aos="zoom-in"
-      className=" lg:mx-32 md:mx-8 mx-5 sm:mx-4">
+      className="mt-5 lg:mx-32 md:mx-8 mx-5 sm:mx-4">
         <div data-aos="fade-left"
         className="text-center py-14 font-bold ">
-          <h1 className="text-4xl text-white">My latest Pojects</h1>
+         <h1 className="mx-auto text-white font-bold my-16 text-4xl border-y-4  border-indigo-600  w-64">My Latest Pojects</h1>
         </div>
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full gap-8">
+        <div className="grid lg:grid-cols-3  md:grid-cols-2 grid-cols-1 w-full gap-8">
           {
             pojects.map(project => <>
               <div key={project.id}
                 className={`${projecstId === project.id ? 'h-auto ' : 'h-fit '} rounded  shadow-xl w-[100%] bg-white px-4 py-5 overflow-hidden `}>
                 <div 
                 >
-                  <div className="card-image-container overflow-y-scroll h-80">
-                    <img className="w-full" src={project.liveImgLink} alt="Mountain" />
+                  <div className="card-image-container overflow-hidden h-80">
+                  <img
+            className="w-full  card-image-scroll"
+            src={project.liveImgLink}
+            alt="Mountain"
+          />
                   </div>
                   <div className="h-full">
                     <div className=" py-4">

@@ -59,11 +59,13 @@ console.log(isDarkMode);
       </div>
       <div className="navbar-end lg:flex hidden sm:hidden">
         <div className="flex justify-between items-center gap-2">
-        <button className="bg-gradient-to-r flex items-center justify-center gap-2 from-[#858792] to-[#4f5054] hover:bg-transparent hover:to-[#252734]  font-semibold py-2 px-4 rounded-md shadow-md transition-all duration-300 text-md transform hover:scale-105 hover:shadow-lg">
-          get Hierd
+        <a 
+           href="#_" className="relative text-md inline-flex items-center justify-center p-4 px-4 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out rounded-full shadow-xl group hover:ring-1 hover:ring-purple-500">
+<span className="absolute inset-0 w-full h-full bg-gradient-to-br from-[#333b72] via-[#5162d1] to-indigo-600"></span>
+<span className="absolute bottom-0 right-0 block w-64 h-64 mb-32 mr-4 transition duration-500 origin-bottom-left transform rotate-45 translate-x-24 bg-[#333b72] rounded-full opacity-30 group-hover:rotate-90 ease"></span>
+<span className="relative text-white "><span>get Hired</span></span>
+</a>
 
-
-        </button>
 
         <div onClick={toggleTheme}>
           
