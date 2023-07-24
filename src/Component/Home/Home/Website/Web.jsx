@@ -79,6 +79,30 @@ const Web = () => {
       githubSurver: 'https://github.com/shammi-riya/educational_toys_surver',
       liveImgLink: 'https://i.ibb.co/xHFr82C/Educational-Toys.png',
       liveLink: 'https://educational-larning.web.app/'
+    },
+    {
+      id: 4,
+      pojectName: 'g3 Architecture',
+      techknology: ['html','css','fully Responsive','media query','css Animation'],
+      features: [
+        'Figma to html'
+      ],
+      githubClient: 'https://github.com/shammi-riya',
+      liveImgLink: 'https://i.ibb.co/dkXfPKY/g3-architecture.png',
+      liveLink: 'https://shammi-riya.github.io/architec-one/'
+    },
+    {
+      id: 4,
+      pojectName: 'Ligel Slution',
+      techknology: ['html','bootstrap' ,'custom animation','media query'],
+      features: [
+        'PHD to html'
+      ],
+      githubClient: 'https://github.com/shammi-riya',
+     
+      liveImgLink: 'https://i.ibb.co/HhvVmQj/ligel-solutation-1.png',
+      liveLink: 'https://splendid-moonbeam-f4e958.netlify.app/',
+     
     }
   ]
 
@@ -152,12 +176,14 @@ const Web = () => {
                           </button>
                         </Link>
 
+{
+ project?.githubSurver&&  <Link to={project?.githubSurver}>
+ <button className="bg-white flex justify-center items-center transform hover:-translate-y-3  p-2 w-10 h-10 rounded-full duration-500 text-[#062265]  hover:border-white text-4xl  hover:bg-[#062265] hover:text-white ">
+   <FaGithubSquare></FaGithubSquare>
+ </button></Link>
+}
 
-
-                        <Link to={project?.githubSurver}>
-                          <button className="bg-white flex justify-center items-center transform hover:-translate-y-3  p-2 w-10 h-10 rounded-full duration-500 text-[#062265]  hover:border-white text-4xl  hover:bg-[#062265] hover:text-white ">
-                            <FaGithubSquare></FaGithubSquare>
-                          </button></Link>
+                      
 
 
                         <Link to={project?.liveLink}>

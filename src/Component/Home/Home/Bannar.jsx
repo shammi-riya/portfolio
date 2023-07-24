@@ -108,7 +108,7 @@ const Bannar = () => {
         </div>
         <div data-aos="fade-left"
           className='lg:px-10 md:px-6 pt-20'>
-          <img className='h-[550px] w-[480px] border-2 lg:ml-12 rounded border-indigo-500' src={img1} alt="" />
+          <img className='h-[550px] w-[460px] border-2 lg:ml-12 rounded border-indigo-500' src={img1} alt="" />
         </div>
       </div>
     </div>
