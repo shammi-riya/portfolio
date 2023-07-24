@@ -66,21 +66,9 @@ const Web = () => {
       liveImgLink: 'https://i.ibb.co/NxQnLyr/Vite-React.png',
       liveLink: 'https://easy-buy-cdeab.web.app/'
     },
+   
     {
       id: 3,
-      pojectName: 'Summer Camp',
-      techknology: ['tailwind', 'react js', 'strie js', 'mongodb', 'express js', 'firebase', 'react-helmet-async '],
-      features: [
-        'Users can add Product to the cart, remove from the cart see added product, increase and decrease product in the cart, send messages',
-        'Authenticated with firebase'
-      ],
-      githubClient: 'https://github.com/shammi-riya/summer-camp_client',
-      githubSurver: 'https://github.com/shammi-riya/summer_camp_surver',
-      liveImgLink: 'https://i.ibb.co/sb70rV8/Vite-React-1.png',
-      liveLink: 'https://summer-camp-419a5.web.app/'
-    },
-    {
-      id: 4,
       pojectName: 'Educational Toys',
       techknology: ['tailwind', 'react js',  'mongodb', 'firebase','daisy ui' ,'react hook from', 'react wassam component'],
       features: [
