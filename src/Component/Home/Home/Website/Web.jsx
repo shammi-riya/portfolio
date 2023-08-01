@@ -21,15 +21,31 @@ const Web = () => {
 
     {
       id: 0,
+      pojectName: 'Shop Wish',
+      techknology: ['Bootstrap','Css','react js', 'matarial ui','mongodb', 'express js', 'firebase', 'axios js','transtrack-quiry'],
+      features: [
+        'Using MERN Stack Technology',
+        'Authentication with Firebase, email verification, JWT Token.transtrack-quiry for effeciant data fatching',
+        'Users can add Product to the cart, remove from the cart see added product, increase and decrease product in the cart, send messages'
+      ],
+
+      githubClient: 'https://github.com/shammi-riya/shopwish_client',
+      githubSurver: 'https://github.com/shammi-riya/shopwish-surver',
+      liveImgLink: 'https://i.ibb.co/KyWjxy7/shopwish.png',
+      liveLink: 'https://shopwish-376a1.web.app/'
+
+    },
+    {
+      id: 1,
       pojectName: 'Creative Hero',
-      techknology: ['tailwind', 'daisy ui' ,'react js', 'strie js', 'mongodb', 'express js', 'firebase', 'axios js'],
+      techknology: ['tailwind', 'daisy ui', 'react js', 'strie js', 'mongodb', 'express js', 'firebase', 'axios js','swiper js'],
       features: [
         'After logging in, the user can select any class and remove a class and add feedback.',
         'Authentication with Firebase, email verification, JWT Token.',
         'Admin can remove any user, update user role to admin or instructor.',
         'Instructor can update content in their course.'
       ],
-     
+
       githubClient: 'https://github.com/shammi-riya/creative-hero-client',
       githubSurver: 'https://github.com/shammi-riya/craetive-hero-surver',
       liveImgLink: 'https://i.ibb.co/XJShz2q/Vite-React-2.png',
@@ -37,43 +53,31 @@ const Web = () => {
 
     },
     {
-      id: 1,
+      id: 4,
       pojectName: 'Bestro Boss Resturent',
-      techknology: ['tailwind', 'react js', 'strie js', 'mongodb', 'express js', 'firebase', 'react-simple-captcha'],
+      techknology: ['tailwind', 'react js', 'strie js', 'mongodb', 'express js', 'firebase', 'react-simple-captcha','react wassam component'],
       features: [
         'Admin can add food, update food, delete food, see booked services and update status, add admin',
         'Authentication with firebase, email verification, JWT Token',
         'users can order food after login and pement with stripe'
       ],
-     
+
       githubClient: 'https://github.com/shammi-riya/besteu-boss-resturent',
       githubSurver: 'https://github.com/shammi-riya/besteu-boss-resturent',
       liveImgLink: 'https://i.ibb.co/1q4q34f/Bestro-Boss-1.png',
       liveLink: 'https://bestro-boss.web.app'
 
     },
-   
-    {
-      id: 2,
-      pojectName: 'Easy Buy',
-      techknology: ['tailwind', 'react js', 'strie js', 'mongodb', 'express js', 'firebase',  'TanStack Query '],
-      features: [
-        'Users can add Product to the cart, remove from the cart see added product, increase and decrease product in the cart, send messages',
-        'Authenticated with firebase'
-      ],
-      githubClient: 'https://github.com/shammi-riya/easy_bye_clientsite',
-      githubSurver: 'https://github.com/shammi-riya/easy_bye_surver',
-      liveImgLink: 'https://i.ibb.co/NxQnLyr/Vite-React.png',
-      liveLink: 'https://easy-buy-cdeab.web.app/'
-    },
+
    
     {
       id: 3,
       pojectName: 'Educational Toys',
-      techknology: ['tailwind', 'react js',  'mongodb', 'firebase','daisy ui' ,'react hook from', 'react wassam component'],
+      techknology: ['tailwind', 'react js', 'mongodb', 'firebase', 'daisy ui', 'react hook from', 'react wassam component'],
       features: [
         'Users can add Product to the cart, remove from the cart see added product, increase and decrease product in the cart, send messages',
         'Authenticated with firebase'
+       
       ],
       githubClient: 'https://github.com/shammi-riya/educational_toys_clint',
       githubSurver: 'https://github.com/shammi-riya/educational_toys_surver',
@@ -81,9 +85,9 @@ const Web = () => {
       liveLink: 'https://educational-larning.web.app/'
     },
     {
-      id: 4,
+      id: 5,
       pojectName: 'g3 Architecture',
-      techknology: ['html','css','fully Responsive','media query','css Animation'],
+      techknology: ['html', 'css', 'fully Responsive', 'media query', 'css Animation'],
       features: [
         'Figma to html'
       ],
@@ -92,18 +96,20 @@ const Web = () => {
       liveLink: 'https://shammi-riya.github.io/architec-one/'
     },
     {
-      id: 4,
+      id: 6,
       pojectName: 'Ligel Slution',
-      techknology: ['html','bootstrap' ,'custom animation','media query'],
+      techknology: ['html', 'bootstrap', 'custom animation', 'media query'],
       features: [
         'PHD to html'
       ],
       githubClient: 'https://github.com/shammi-riya',
-     
+
       liveImgLink: 'https://i.ibb.co/HhvVmQj/ligel-solutation-1.png',
       liveLink: 'https://splendid-moonbeam-f4e958.netlify.app/',
-     
-    }
+
+    },
+   
+
   ]
 
 
@@ -124,29 +130,29 @@ const Web = () => {
 
 
   return (
-    < 
-    >
-   
+    <
+      >
+
       <div id="projects"
-       data-aos="zoom-in"
-      className="mt-5 lg:mx-32 md:mx-8 mx-5 sm:mx-4">
+        data-aos="zoom-in"
+        className="mt-5 lg:mx-32 md:mx-8 mx-5 sm:mx-4">
         <div data-aos="fade-left"
-        className="text-center py-14 font-bold ">
-         <h1 className="mx-auto text-white font-bold my-16 text-4xl border-y-4  border-indigo-600  w-64">My Latest Pojects</h1>
+          className="text-center py-14 font-bold ">
+          <h1 className="mx-auto text-white font-bold my-16 text-4xl border-y-4  border-indigo-600  w-64">My Latest Pojects</h1>
         </div>
         <div className="grid lg:grid-cols-3  md:grid-cols-2 grid-cols-1 w-full gap-8">
           {
             pojects.map(project => <>
               <div key={project.id}
                 className={`${projecstId === project.id ? 'h-auto ' : 'h-fit '} rounded  shadow-xl w-[100%] bg-white px-4 py-5 overflow-hidden `}>
-                <div 
+                <div
                 >
                   <div className="card-image-container overflow-hidden h-80">
-                  <img
-            className="w-full  card-image-scroll"
-            src={project.liveImgLink}
-            alt="Mountain"
-          />
+                    <img
+                      className="w-full  card-image-scroll"
+                      src={project.liveImgLink}
+                      alt="Mountain"
+                    />
                   </div>
                   <div className="h-full">
                     <div className=" py-4">
@@ -176,14 +182,14 @@ const Web = () => {
                           </button>
                         </Link>
 
-{
- project?.githubSurver&&  <Link to={project?.githubSurver}>
- <button className="bg-white flex justify-center items-center transform hover:-translate-y-3  p-2 w-10 h-10 rounded-full duration-500 text-[#062265]  hover:border-white text-4xl  hover:bg-[#062265] hover:text-white ">
-   <FaGithubSquare></FaGithubSquare>
- </button></Link>
-}
+                        {
+                          project?.githubSurver && <Link to={project?.githubSurver}>
+                            <button className="bg-white flex justify-center items-center transform hover:-translate-y-3  p-2 w-10 h-10 rounded-full duration-500 text-[#062265]  hover:border-white text-4xl  hover:bg-[#062265] hover:text-white ">
+                              <FaGithubSquare></FaGithubSquare>
+                            </button></Link>
+                        }
 
-                      
+
 
 
                         <Link to={project?.liveLink}>
