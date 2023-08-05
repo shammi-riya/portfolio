@@ -32,7 +32,7 @@ const Web = () => {
       githubClient: 'https://github.com/shammi-riya/shopwish_client',
       githubSurver: 'https://github.com/shammi-riya/shopwish-surver',
       liveImgLink: 'https://i.ibb.co/KyWjxy7/shopwish.png',
-      liveLink: 'https://shopwish-376a1.web.app/'
+      liveLink: 'https://e-comarce-2d571.web.app/'
 
     },
     {
@@ -40,10 +40,12 @@ const Web = () => {
       pojectName: 'Creative Hero',
       techknology: ['tailwind', 'daisy ui', 'react js', 'strie js', 'mongodb', 'express js', 'firebase', 'axios js','swiper js'],
       features: [
-        'After logging in, the user can select any class and remove a class and add feedback.',
-        'Authentication with Firebase, email verification, JWT Token.',
-        'Admin can remove any user, update user role to admin or instructor.',
-        'Instructor can update content in their course.'
+        'Streamlined Class Management: Instructors can easily add classes, and upon admin approval, students  can enroll and select their preferred classes, ensuring a smooth learning experience'
+        ,
+        'Tailored Dashboards: Enjoy a personalized experience with separate dashboards for users, students, instructors, and administrators. Instructors can effortlessly add classes, while the authority to approve .',
+        'User Role Management: Admins can efficiently manage user roles, promoting users to admin or instructor status as needed. This ensures a well-organized and secure platform.'
+        ,
+        
       ],
 
       githubClient: 'https://github.com/shammi-riya/creative-hero-client',
